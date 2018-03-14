@@ -15,9 +15,6 @@
 Route::get('/', function () {
     return view('encode');
 });
-Route::get('/test', function () {
-    return "HELLO";
-});
 
 Route::post('/', 'Encoder@msgEncode');
 Route::get('/delete', 'Decoder@deleteMsg');
